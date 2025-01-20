@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "name": "spl_token_transfer",
+    "instructions": [
+        {
+            "name": "initialize",
+            "accounts": [],
+            "args": []
+        },
+        {
+            "name": "transferToken2022",
+            "accounts": [
+                {
+                    "name": "from",
+                    "isMut": true,
+                    "isSigner": true
+                },
+                {
+                    "name": "fromAta",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "toAta",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "mint",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "amount",
+                    "type": "u64"
+                }
+            ]
+        }
+    ]
+}
